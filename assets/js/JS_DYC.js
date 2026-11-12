@@ -18,7 +18,7 @@ Date: November 12th, 2026
 // variable declaration
 
 let dogWeightKg;
-let DogAge;
+let dogAge;
 let humanAgeofDog;
 let person;
 const yearOneAge = 15;
@@ -74,6 +74,10 @@ console.log("Thank You For Visiting Purina For All Your Pets Needs");
 
 
 Test Code: 
+if (dogAge >= 2) {
+	dogAge -=2 dogAge;
+}
+
 
  */
  

@@ -40,7 +40,7 @@ console.log(`██▀██ ██ ██ ██▀██ ▀██▀ ██�
 
 alert("Welcome to the Purina Dog Age to Human Age calculator.");
 
-person = prompt("What is your name?, Awesome Sauce");
+person = prompt("What is your name?", "Awesome Sauce");
 //maybe add a variable that asks what they're looking for? If it's anything other than dog calculator, we tell them we cant help them
 
 console.log(`Hello ${person}! Did you know that the idea that multiplying a dog's age by 7 will give you their human age is a myth? This age converter will give you your dog's TRUE age in human years. You bring the dog's age, we'll bring the human age.`);
@@ -52,7 +52,7 @@ console.log("We'll use your dogs current age and weight to determine their human
 
 
 //User Input Part 4 UI/UX
-dogName = prompt("What is your dog's name?, Good Dog");
+dogName = prompt("What is your dog's name?", "Good Dog");
 dogWeightKg = prompt("To start, please enter your dog's weight in kilograms"); 
 dogAge = prompt("Please tell us your dog's current age");
 //don't forget to check if they added units

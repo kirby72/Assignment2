@@ -1,13 +1,14 @@
 /*
 Title: Assignment 2-Purina Dog Age Calculator
 
-Program Element List (10 Most Complex Concepts / Syntax used): let variable declaration, const variable declaration,
+Program Element List (10 Most Complex Concepts / Syntax used): let variable declaration, const variable declaration, conditionals,
+string interpolation, .isNaN, 
 
 Teammates Kyle (Github Repo Owner, Leader ig), Shreya (CSS Queen), Nikki (Busy Bee) (Author, Role)
 
-Version:1
+Version: 4
 
-Date: November 12th, 2026
+Date: November 18th, 2026
 
  
  */
@@ -59,22 +60,43 @@ dogAge = prompt("Please tell us your dog's current age");
 
 //Reiterate User Input Part 4.5 UI/UX
 
-if (dogWeightKg <= 9){
+if (dogWeightKg > 0 && dogWeightKg <= 9){
 	sizeCategory = "small";
 	yearMultiplier = 4;
-} else if (dogWeightKg <= 23 {
+} else if (dogWeightKg > 9 && dogWeightKg <= 23) {
 	sizeCategory = "medium";
 	yearMultiplier = 5;
-} else if (dogWeightKg <= 45 {
+} else if (dogWeightKg > 23 && dogWeightKg <= 45) {
 	sizeCategory = "large";
 	yearMultiplier = 6;
+} else if (dogWeightKg > 45 && dogWeightKg <= 120) {
+	sizeCategory = "giant";
+	yearMultiplier = 7.5;
+} else {
+	console.log("That is not a valid weight. Please try again.");
 }
 
-console.log(`Cool! You said ${dogName} is ${dogWeightKg}, so your dog falls into the ${sizeCategory} category.`);
+if (dogAge < 0 || dogAge > 30 || dogAge.isNaN){
+	console.log("That age doesn't seem right... try entering a valid age.");
+}
+
+console.log(`Cool! You said ${dogName} is ${dogWeightKg}, so your dog falls into the ${sizeCategory} category. You also said they are ${dogAge} years old.`);
 
 //Save Load Options (Main) Part 5
 
+if (dogAge <=1){
+	humanAgeofDog = dogAge * yearOneAge;
+} else if (dogAge <= 2) {
+	humanAgeofDog = yearOneAge + ((dogAge - 1) * yearTwoAge);
+} else {
+	humanAgeofDog = yearOneAge + yearTwoAge + ((dogAge - 2) * yearMultiplier);
+}
+
+
 //Output Part 6 
+
+console.log(`Your dog is ${humanAgeofDog} years old.`);
+
 
 //add advice for the dog
 //comment on how old the dog is
@@ -96,6 +118,8 @@ console.log("Thank You For Visiting Purina For All Your Pets Needs");
  
 /*
  Notes:
+
+We should add some extra things to make our program stand out, maybe nutritional facts or trying to sell them something??-busy bee
 
 
 Test Code: 

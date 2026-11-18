@@ -53,7 +53,7 @@ console.log("We'll use your dogs current age and weight to determine their human
 
 //User Input Part 4 UI/UX
 dogName = prompt("What is your dog's name?, Good Dog");
-dogWeightKg = prompt("To start, please enter your dog's weight in kilograms); 
+dogWeightKg = prompt("To start, please enter your dog's weight in kilograms"); 
 dogAge = prompt("Please tell us your dog's current age");
 //don't forget to check if they added units
 

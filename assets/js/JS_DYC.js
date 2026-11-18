@@ -80,7 +80,7 @@ if (dogAge < 0 || dogAge > 30 || dogAge.isNaN){
 	console.log("That age doesn't seem right... try entering a valid age.");
 }
 
-console.log(`Cool! You said ${dogName} is ${dogWeightKg}, so your dog falls into the ${sizeCategory} category. You also said they are ${dogAge} years old.`);
+console.log(`Cool! You said ${dogName} is ${dogWeightKg} kg, so your dog falls into the ${sizeCategory} category. You also said they are ${dogAge} years old.`);
 
 //Save Load Options (Main) Part 5
 
@@ -95,7 +95,7 @@ if (dogAge <=1){
 
 //Output Part 6 
 
-console.log(`Your dog is ${humanAgeofDog} years old.`);
+console.log(`Your dog is ${humanAgeofDog} years old in human years.`);
 
 
 //add advice for the dog

@@ -77,7 +77,7 @@ if (dogWeightKg > 0 && dogWeightKg <= 9){
 	console.log("That is not a valid weight. Please try again.");
 }
 
-if (dogAge < 0 || dogAge > 30 || dogAge.isNaN){
+if (dogAge < 0) || (dogAge > 30) || (dogAge.isNaN){
 	console.log("That age doesn't seem right... try entering a valid age.");
 }
 

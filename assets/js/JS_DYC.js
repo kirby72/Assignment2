@@ -27,7 +27,7 @@ let yearMultiplier;
 let dogName;
 const yearOneAge = 15;
 const yearTwoAge = 9;
-
+let continuer;
 
 //Title Screen (Ascii Art) Part 1 UI/UX 
 
@@ -54,6 +54,9 @@ console.log("We'll use your dogs current age and weight to determine their human
 
 //User Input Part 4 UI/UX
 dogName = prompt("What is your dog's name?", "Good Dog");
+
+for (continuer = false; if continuer === true; continuer = false) {
+
 dogWeightKg = Number(prompt("To start, please enter your dog's weight in kilograms")); 
 dogAge = Number(prompt("Please tell us your dog's current age"));
 //don't forget to check if they added units
@@ -75,10 +78,14 @@ if (dogWeightKg > 0 && dogWeightKg <= 9){
 	yearMultiplier = 7.5;
 } else {
 	console.log("That is not a valid weight. Please try again.");
+	continuer = true;
+		continue;
 }
 
 if (dogAge < 0 || dogAge > 30 || Number.isNaN(dogAge)) {
 	console.log("That age doesn't seem right... try entering a valid age.");
+	continuer = true;
+	continue;
 }
 
 console.log(`Cool! You said ${dogName} is ${dogWeightKg} kg, so your dog falls into the ${sizeCategory} category. You also said they are ${dogAge} years old.`);
@@ -103,7 +110,9 @@ console.log(`Your dog is ${humanAgeofDog} years old in human years.`);
 //comment on how old the dog is
 
 //Thank you message Part 7
-
+	
+}
+	
 
 prompt('What Information are you Looking for Today???', "dog food");
 			

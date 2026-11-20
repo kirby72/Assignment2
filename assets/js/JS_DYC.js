@@ -27,7 +27,7 @@ let yearMultiplier;
 let dogName;
 const yearOneAge = 15;
 const yearTwoAge = 9;
-let continuer;
+let continuer = false;
 
 //Title Screen (Ascii Art) Part 1 UI/UX 
 

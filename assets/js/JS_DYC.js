@@ -55,7 +55,7 @@ console.log("We'll use your dogs current age and weight to determine their human
 //User Input Part 4 UI/UX
 dogName = prompt("What is your dog's name?", "Good Dog");
 
-for (continuer = 0; continuer < 1; continuer++) {
+do {
 
 dogWeightKg = Number(prompt("To start, please enter your dog's weight in kilograms")); 
 dogAge = Number(prompt("Please tell us your dog's current age"));
@@ -99,6 +99,16 @@ if (dogAge <=1){
 } else {
 	humanAgeofDog = yearOneAge + yearTwoAge + ((dogAge - 2) * yearMultiplier);
 }
+	
+let continuer2er = prompt("do you want to contine?", "yes/no")
+
+if (answer === null || answer.toLowerCase() === "no") {
+        continuer = false;
+    }
+
+
+	
+} while (continuer);
 
 
 //Output Part 6 

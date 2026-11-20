@@ -1,5 +1,5 @@
 # Assignment2
-purina thing
+purina thing!
 
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 

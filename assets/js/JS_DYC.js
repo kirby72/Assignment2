@@ -78,13 +78,13 @@ if (dogWeightKg > 0 && dogWeightKg <= 9){
 	yearMultiplier = 7.5;
 } else {
 	console.log("That is not a valid weight. Please try again.");
-	continuer = 0;
+	continuer = true;
 		continue;
 }
 
 if (dogAge < 0 || dogAge > 30 || Number.isNaN(dogAge)) {
 	console.log("That age doesn't seem right... try entering a valid age.");
-	continuer = 0;
+	continuer = true;
 	continue;
 }
 

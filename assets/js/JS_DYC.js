@@ -55,7 +55,7 @@ console.log("We'll use your dogs current age and weight to determine their human
 //User Input Part 4 UI/UX
 dogName = prompt("What is your dog's name?", "Good Dog");
 
-for (continuer = false; if continuer === true; continuer = false) {
+for (continuer = false; continuer === true; continuer = false) {
 
 dogWeightKg = Number(prompt("To start, please enter your dog's weight in kilograms")); 
 dogAge = Number(prompt("Please tell us your dog's current age"));

@@ -102,7 +102,7 @@ if (dogAge <=1){
 	
 let continuer2er = prompt("do you want to contine?", "yes/no")
 
-if (answer === null || answer.toLowerCase() === "no") {
+if (continuer2er === null || continuer2er.toLowerCase() === "no") {
         continuer = false;
     }
 

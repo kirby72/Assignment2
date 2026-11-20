@@ -121,7 +121,7 @@ console.log(`Your dog is ${humanAgeofDog} years old in human years.`);
 
 //Thank you message Part 7
 	
-}
+
 	
 
 prompt('What Information are you Looking for Today???', "dog food");

@@ -17,7 +17,7 @@ Date: November 18th, 2026
 // Beginning of Program 
 
 // variable declaration
-
+let answer
 let dogWeightKg;
 let dogAge;
 let humanAgeofDog;

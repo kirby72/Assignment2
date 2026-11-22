@@ -2,13 +2,13 @@
 Title: Assignment 2-Purina Dog Age Calculator
 
 Program Element List (10 Most Complex Concepts / Syntax used): let variable declaration, const variable declaration, conditionals,
-string interpolation, .isNaN, 
+string interpolation, .isNaN, do while loop, prompt, alert, logical operators, console.log() 
 
 Teammates Kyle (Github Repo Owner, Leader ig), Shreya (CSS Queen), Nikki (Busy Bee) (Author, Role)
 
-Version: 4
+Version: 26
 
-Date: November 18th, 2026
+Date: November 21st, 2026
 
  
  */
@@ -40,6 +40,9 @@ console.log(`
 //Introduction (Summary) Part 2 UI/UX 
 
 alert("Welcome to the Purina Dog Age to Human Age calculator.");
+
+prompt('What Information are you Looking for Today???', "dog food");
+
 
 person = prompt("What is your name?", "Awesome Sauce");
 //maybe add a variable that asks what they're looking for? If it's anything other than dog calculator, we tell them we cant help them
@@ -99,6 +102,10 @@ if (dogAge <=1){
 } else {
 	humanAgeofDog = yearOneAge + yearTwoAge + ((dogAge - 2) * yearMultiplier);
 }
+
+//Output Part 6 
+
+console.log(`Your dog is ${humanAgeofDog} years old in human years.`);
 	
 let continuer2er = prompt("do you want to contine?", "yes/no")
 
@@ -111,23 +118,14 @@ if (continuer2er === null || continuer2er.toLowerCase() === "no") {
 } while (continuer);
 
 
-//Output Part 6 
 
-console.log(`Your dog is ${humanAgeofDog} years old in human years.`);
 
 
 //add advice for the dog
 //comment on how old the dog is
 
 //Thank you message Part 7
-	
-
-	
-
-prompt('What Information are you Looking for Today???', "dog food");
 			
-		
-
 		
 alert("Thank You For Visiting Purina For All Your Pets Needs");
 console.log("Thank You For Visiting Purina For All Your Pets Needs");

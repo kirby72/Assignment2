@@ -46,12 +46,16 @@ prompt('What Information are you Looking for Today???', "dog food");
 person = prompt("What is your name?", "Awesome Sauce");
 //maybe add a variable that asks what they're looking for? If it's anything other than dog calculator, we tell them we cant help them
 
-console.log(`Hello ${person}! Did you know that the idea that multiplying a dog's age by 7 will give you their human age is a myth? This age converter will give you your dog's TRUE age in human years. You bring the dog's age, we'll bring the human age.`);
+console.log(`
+	Hello ${person}! Did you know that the idea that multiplying a dog's age by 7 will give you their human age is a myth? This age converter will give you your dog's TRUE age in human years. You bring the dog's age, we'll bring the human age.
+	`);
 
 
 //Explanation (Rules, Instructions, Controls, Navigate, Manage User Expectations) Part 3 UI/UX
 
-console.log("We'll use your dogs current age and weight to determine their human age! Bigger dogs will age faster, so we'll need to know their weight.");
+console.log(`
+	We'll use your dogs current age and weight to determine their human age! Bigger dogs will age faster, so we'll need to know their weight.
+	`);
 
 
 //User Input Part 4 UI/UX
@@ -77,7 +81,9 @@ if (dogWeightKg > 0 && dogWeightKg <= 9){
 	sizeCategory = "giant";
 	yearMultiplier = 7.5;
 } else {
-	console.log("That is not a valid weight. Please try again.");
+	console.log(`
+		That is not a valid weight. Please try again.
+		`);
 	continuer = true;
 		continue;
 }
@@ -85,12 +91,16 @@ if (dogWeightKg > 0 && dogWeightKg <= 9){
 dogAge = Number(prompt("Please tell us your dog's current age"));
 
 if (dogAge < 0 || dogAge > 30 || Number.isNaN(dogAge)) {
-	console.log("That age doesn't seem right... try entering a valid age.");
+	console.log(`
+		That age doesn't seem right... try entering a valid age.
+		`);
 	continuer = true;
 	continue;
 }
 
-console.log(`Cool! You said ${dogName} is ${dogWeightKg} kg, so your dog falls into the ${sizeCategory} category. You also said they are ${dogAge} years old.`);
+console.log(`
+	Cool! You said ${dogName} is ${dogWeightKg} kg, so your dog falls into the ${sizeCategory} category. You also said they are ${dogAge} years old.
+	`);
 
 //Save Load Options (Main) Part 5
 
@@ -127,7 +137,9 @@ wait3SecFunctionIMadeForContinuer();
 			
 		
 alert("Thank You For Visiting Purina For All Your Pets Needs");
-console.log("Thank You For Visiting Purina For All Your Pets Needs");
+console.log(`
+	Thank You For Visiting Purina For All Your Pets Needs
+	`);
 
 
 //Ending of Program

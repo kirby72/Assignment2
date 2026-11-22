@@ -560,6 +560,14 @@ body {
   background-attachment: fixed !important;
   background: linear-gradient(#2a2a29, #1c1c1c); }
 
+.dog {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px auto; }
+
+
+
 h1, h2, h3, h4, h5, h6 {
   color: #e8e8e8;
   margin: 0 0 10px;

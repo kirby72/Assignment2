@@ -61,10 +61,8 @@ dogName = prompt("What is your dog's name?", "Good Dog");
 do {
 
 dogWeightKg = Number(prompt("To start, please enter your dog's weight in kilograms")); 
-dogAge = Number(prompt("Please tell us your dog's current age"));
+
 //don't forget to check if they added units
-
-
 //Reiterate User Input Part 4.5 UI/UX
 
 if (dogWeightKg > 0 && dogWeightKg <= 9){
@@ -84,6 +82,8 @@ if (dogWeightKg > 0 && dogWeightKg <= 9){
 	continuer = true;
 		continue;
 }
+
+dogAge = Number(prompt("Please tell us your dog's current age"));
 
 if (dogAge < 0 || dogAge > 30 || Number.isNaN(dogAge)) {
 	console.log("That age doesn't seem right... try entering a valid age.");
@@ -113,7 +113,7 @@ if (continuer2er === null || continuer2er.toLowerCase() === "no") {
         continuer = false;
     }
 
-
+wait3SecFunctionIMadeForContinuer();s
 	
 } while (continuer);
 

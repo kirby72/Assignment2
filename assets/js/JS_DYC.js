@@ -113,7 +113,7 @@ if (continuer2er === null || continuer2er.toLowerCase() === "no") {
         continuer = false;
     }
 
-wait3SecFunctionIMadeForContinuer();s
+wait3SecFunctionIMadeForContinuer();
 	
 } while (continuer);
 

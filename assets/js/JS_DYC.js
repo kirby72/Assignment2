@@ -17,7 +17,6 @@ Date: November 21st, 2026
 // Beginning of Program 
 
 // variable declaration
-let answer
 let dogWeightKg;
 let dogAge;
 let humanAgeofDog;
@@ -142,7 +141,7 @@ We should add some extra things to make our program stand out, maybe nutritional
 
 Test Code: 
 if (dogAge >= 2) {
-	dogAge -=2 dogAge;
+	dogAge -= 2;
 }
 
 alert('Welcome To Purina');
